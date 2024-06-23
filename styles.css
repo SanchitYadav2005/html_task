@@ -1,184 +1,265 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-body{
+body {
     font-family: "Roboto", sans-serif;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     margin: 3em;
     align-items: center;
 }
 
-.tryBtn{
+.tryBtn {
     border: 2px solid #ff86c8;
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.5em 1em;
     border-radius: 30px;
     color: #ff86c8;
     margin-top: 1em;
 }
 
-.hero-section{
+.hero-section {
     margin-top: 18%;
     text-align: center;
 }
 
-.hero-heading{
+.hero-heading {
     font-size: 3em;
 }
 
-.hero-text{
+.hero-text {
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2em auto;
     line-height: 30px;
     font-size: 1.5em;
-    font-weight: light;
-    margin-top: 2em;
+    font-weight: 300;
 }
 
-.btn{
+.btn {
     background-color: #ff86c8;
     color: white;
     font-size: 1.2em;
-    border: hidden;
-    padding: 1em 3em 1em 3em;
+    border: none;
+    padding: 1em 3em;
     margin-top: 2em;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.image{
+.image {
     margin-top: 5em;
     text-align: center;
 }
 
-.points{
+.points {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5em;
 }
 
-.color-height{
+.color-height {
     width: 30%;
 }
 
-.numbers{
+.numbers {
     font-size: 3em;
     font-weight: bolder;
 }
 
-.info{
+.info {
     color: #8e9aaf;
 }
 
-
-.section{
+.section {
     margin-top: 13em;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin: 0 5em;
 }
 
-.section img{
+.section img {
     width: 40%;
 }
 
-.head{
+.head {
     font-size: 2em;
     font-weight: bolder;
 }
-.head-info{
+
+.head-info {
     width: 90%;
-    font-weight: light;
+    font-weight: 300;
     color: #8e9aaf;
     line-height: 30px;
 }
 
-.section-diff img{
+.section-diff img {
     width: 40%;
     margin-left: 5em;
 }
 
-.section-diff{
+.section-diff {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 13em;
 }
 
-.section-diff .text{
+.section-diff .text {
     margin-left: 5em;
 }
 
-.get-started{
+.get-started {
     margin-top: 13em;
     text-align: center;
 }
 
-.get-started p{
+.get-started p {
     font-size: 2em;
     font-weight: bolder;
 }
 
-footer{
+footer {
     margin-top: 13em;
     display: flex;
-    margin-left: 5em ;
-    margin-right: 5em;
-    margin-bottom: 5em;
+    margin: 0 5em 5em 5em;
 }
 
 .main-div p {
-line-height: 22px;
+    line-height: 22px;
 }
 
-.phone-email{
+.phone-email {
     display: flex;
     align-items: center;
 }
 
-.phone-email i{
+.phone-email i {
     margin-right: 1em;
 }
 
-.logos{
+.logos {
     margin-top: 2em;
     font-size: 2em;
 }
 
-.logos i{
+.logos i {
     margin-right: 0.6em;
 }
 
-.form{
+.form {
     margin-left: 25em;
 }
 
-.form div{
+.form div {
     font-weight: bolder;
     font-size: 2em;
 }
-.form p{
+
+.form p {
     color: #8e9aaf;
 }
 
-.inputs{
+.inputs {
     margin-top: 2em;
 }
-.inputs input{
-    padding: 1em 2em 1em 1em;
+
+.inputs input {
+    padding: 1em 2em;
     width: 45%;
     border-radius: 10px;
     border: 1px solid black;
 }
 
-.inputs button{
-    padding: 1em 3em 1em 3em;
+.inputs button {
+    padding: 1em 3em;
     border-radius: 10px;
-    border: hidden;
+    border: none;
     background-color: #ff86c8;
     color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .hero-section {
+        margin-top: 10%;
+    }
+    .hero-heading {
+        font-size: 2.5em;
+    }
+    .hero-text {
+        width: 80%;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        margin: 2em 1em;
+    }
+    .hero-heading {
+        font-size: 2em;
+    }
+    .hero-text {
+        width: 90%;
+    }
+    .section, .section-diff {
+        flex-direction: column;
+        margin: 2em 1em;
+    }
+    .section img, .section-diff img {
+        width: 80%;
+        margin: 2em 0;
+    }
+    .form {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 1.8em;
+    }
+    .hero-text {
+        font-size: 1em;
+    }
+    .btn {
+        font-size: 1em;
+        padding: 1em 2em;
+    }
+    .color-height {
+        width: 90%;
+    }
+    .points {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section, .section-diff {
+        margin: 2em 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-heading {
+        font-size: 1.5em;
+    }
+    .hero-text {
+        font-size: 0.9em;
+    }
+    .btn {
+        padding: 0.8em 1.5em;
+    }
+    .form div, .form p {
+        text-align: center;
+    }
+    .inputs input {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+    .inputs button {
+        width: 90%;
+    }
 }
